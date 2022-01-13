@@ -35,9 +35,9 @@ public class CarritoDeCompraPages extends SeleniumBase {
         Thread.sleep(2000);
     }
 
-    public void aumentarCantidad(int arg1) throws InterruptedException {
-        implicitWait(plus);
-        for (int i = 0; i < arg1; i++) {
+    public void aumentarCantidad(int input) throws InterruptedException {
+        Thread.sleep(5000);
+        for (int i = 0; i < input; i++) {
             click(plus);
             Thread.sleep(2000);
         }
